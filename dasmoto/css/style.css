@@ -2,36 +2,34 @@ body {
 	font-family: Helvetica;
 }
 
+.header, .item, .price {
+	font-weight: bold;
+}
+
 .header {
 	font-size: 100px;
-	font-weight: bold;
 	color: khaki;
 	text-align: center;
 	background-image: url('./pattern.jpeg');
 }
 
-#Brushes {
+.item {
 	font-size: 32px;
-	font-weight: bold;
 	color: white;
+}
+
+#Brushes {
 	background-color: mediumspringgreen;
 }
 
 #Frames {
-	font-size: 32px;
-	font-weight: bold;
-	color: white;
 	background-color: lightcoral;
 }
 
 #Paint {
-	font-size: 32px;
-	font-weight: bold;
-	color: white;
 	background-color: skyblue;
 }
 
 .price {
-	font-weight: bold;
 	color: blue;
 }
