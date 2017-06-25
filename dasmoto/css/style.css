@@ -1,5 +1,8 @@
-.header {
+body {
 	font-family: Helvetica;
+}
+
+.header {
 	font-size: 100px;
 	font-weight: bold;
 	color: khaki;
@@ -8,7 +11,6 @@
 }
 
 #Brushes {
-	font-family: Helvetica;
 	font-size: 32px;
 	font-weight: bold;
 	color: white;
@@ -16,7 +18,6 @@
 }
 
 #Frames {
-	font-family: Helvetica;
 	font-size: 32px;
 	font-weight: bold;
 	color: white;
@@ -24,7 +25,6 @@
 }
 
 #Paint {
-	font-family: Helvetica;
 	font-size: 32px;
 	font-weight: bold;
 	color: white;
@@ -32,7 +32,6 @@
 }
 
 .price {
-	font-family: Helvetica;
 	font-weight: bold;
 	color: blue;
 }
