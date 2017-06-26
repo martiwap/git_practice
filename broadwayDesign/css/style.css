@@ -1,0 +1,46 @@
+html {
+	font-family: Helvetica;
+	text-align: center;
+	background-image: url(the-flatiron-building.png);
+}
+
+.header, .subHeader {
+	color: white;
+	font-weight: bold;
+}
+
+.container {
+	background-color: white;
+}
+
+h1 {
+	font-size: 70px;
+}
+
+nav {
+	font-size: 18px;
+	color: white;
+}
+
+h3 {
+	font-size: 32px;
+}
+
+h4 {
+	font-size: 23px;
+}
+
+p {
+	font-size: 14;
+}
+
+.subHeader {
+	font-size: 23px;
+}
+
+.footer {
+	font-size: 11px;
+	color: white;
+	background-color: dimgray;
+	text-align: left;
+}
