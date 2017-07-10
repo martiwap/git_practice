@@ -1,0 +1,61 @@
+.header {
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+	align-items: center;
+	font-family: Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	width: 100%;
+}
+
+.logo {
+	color: MediumAquamarine;
+	justify-content: flex-start;
+	border-bottom: 1px solid black;
+}
+
+nav, li {
+	display: inline;
+	justify-content: flex-end;
+	margin: auto;
+	float: left;
+}
+
+.sidebar {
+	display: flex;
+	float: right;
+
+}
+
+.container {
+	display: flex;
+	column-count: 3;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.column.larger {
+	width: 63%;
+}
+
+.column.medium {
+	width: 30%;
+}
+
+.column.small {
+	width: 24%;
+}
+
+.article {
+	border: 1px solid black;
+}
+
+.footer {
+	border: 1px solid black;
+	display: inline-flex;
+	align-self: flex-end;
+	justify-content: : center;
+	width: 100%;
+	margin: auto;
+}
