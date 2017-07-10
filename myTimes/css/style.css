@@ -28,23 +28,24 @@ nav, li {
 
 }
 
-.container {
+.column{
 	display: flex;
+	flex-direction: column;
 	column-count: 3;
-	flex-wrap: wrap;
-	justify-content: center;
+	margin: right 30px;
+	border: 1px solid black;
 }
 
-.column.larger {
-	width: 63%;
+.column.large {
+	width: 630px;
 }
 
 .column.medium {
-	width: 30%;
+	width: 300px;
 }
 
 .column.small {
-	width: 24%;
+	width: 240px;
 }
 
 .article {
