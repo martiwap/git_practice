@@ -1,0 +1,107 @@
+body {
+	font-family: Helvetica;
+	font-size: 22px;
+	color: seashell;
+	background-color: black;
+	opacity: 0.9;
+	margin: auto;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	height: 69px;
+	width: 100%;
+	border-bottom: 1px solid seashell;
+	background-color: black;
+}
+
+.logo {
+	height: 50px;
+	padding-left: 10px: 
+}
+
+.navBar, li {
+	list-style-type: none;
+	display: inline;
+	padding-right: 10px;
+	text-decoration: underline;
+}
+
+.ourMission {
+	background-image: url(../resources/img-mission-background.jpg);
+	height: 700px;
+	width: 1200px;
+	align-items: center;
+}
+
+.target {
+	width: 1200px;
+	background-color: black;
+	display: block;
+	text-align: center;
+}
+
+.target, h2 {
+	font-weight: bold;
+}
+
+.teaMonth {
+	width: 1000px;
+	height: 800px;
+	text-align: center;
+	align-items: center;
+}
+
+.teaColumn {
+	display: flex;
+}
+
+.teaColumn, img {
+	width: 300px;
+	height: 200px;
+	padding: 5px;
+}
+
+.item {
+	text-align: center;
+}
+
+.location {
+	background-image: url(../resources/img-locations-background.jpg);
+	height: 500px;
+	width: 1200px;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.locTitle {
+	font-weight: bold;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+.locItem {
+	background-color: black;
+	opacity: 1;
+	padding: 40px;
+	width: 300px;
+	height: 300px;
+}
+
+.locComumn, li {
+	display: inline;
+}
+
+
+.footer {
+	text-align: center;
+	height: 200px;
+}
+
+.copyright {
+	text-align: left;
+	padding-left: 20px;
+}
+
