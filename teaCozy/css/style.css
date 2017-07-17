@@ -15,11 +15,13 @@ body {
 	width: 100%;
 	border-bottom: 1px solid seashell;
 	background-color: black;
+	padding: 0 10px;
+	vertical-align: middle;
 }
 
 .logo {
 	height: 50px;
-	padding-left: 10px: 
+	padding: 10px 0;
 }
 
 .navBar, li {
@@ -27,13 +29,16 @@ body {
 	display: inline;
 	padding-right: 10px;
 	text-decoration: underline;
+	color: seashell;
 }
 
 .ourMission {
+	display: flex;
 	background-image: url(../resources/img-mission-background.jpg);
 	height: 700px;
 	width: 1200px;
 	align-items: center;
+	margin: 0 auto;	
 }
 
 .target {
@@ -43,25 +48,36 @@ body {
 	text-align: center;
 }
 
+.target, h2 h4 {
+	align-items: center;
+}
+
 .target, h2 {
 	font-weight: bold;
 }
 
 .teaMonth {
-	width: 1000px;
-	height: 800px;
 	text-align: center;
 	align-items: center;
 }
 
 .teaColumn {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 1000px;
+	margin: 0 auto;
 }
 
-.teaColumn, img {
+.teaColumn .item {
+	padding: 5px;
+	padding-bottom: 10px;
+}
+
+.teaColumn .item img {
+	width: 100%;
 	width: 300px;
 	height: 200px;
-	padding: 5px;
 }
 
 .item {
@@ -69,15 +85,16 @@ body {
 }
 
 .location {
-	background-image: url(../resources/img-locations-background.jpg);
-	height: 500px;
-	width: 1200px;
-	flex-direction: row;
-	justify-content: center;
+	background: url(../resources/img-locations-background.jpg) no-repeat;
+	background-position: center -100px;
+    height: 500px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .locTitle {
 	font-weight: bold;
+	padding-top: 20px;
 	padding-bottom: 15px;
 	text-align: center;
 }
@@ -86,15 +103,19 @@ body {
 	background-color: black;
 	opacity: 1;
 	padding: 40px;
-	width: 300px;
-	height: 300px;
+	width: 250px;
+	height: 250px;
+	text-align: center;
 }
 
-.locComumn, li {
-	display: inline;
+.locColumn{
+	display: flex;
+	justify-content: space-around;
 }
 
-
+.locColumn h5 {
+	line-height: 35px;
+}
 .footer {
 	text-align: center;
 	height: 200px;
