@@ -1,133 +1,58 @@
-html,
-body {
-  font-family: Helvetica, sans-serif;
-  font-size: 16px;
-  margin: 0;
-  background-color: white;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.main {
-  height: 30rem;
-  padding-top: 1rem;
-  background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tsunami-coffee/images/bg-photo.png')
-}
-
-.main img {
-  width: 15rem;
-  display: block;
-  margin: auto;
-  margin-top: 5rem;
-}
-
 nav {
-  background-color: OrangeRed;
-  color: White;
-  padding: 0.75rem 1.25rem;
+  padding: 25px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F25F5C;
+}
+
+h1 {
+  float: left;
+  margin-top: 5px;
+  color: white;
+  font-size: 36px;
 }
 
 ul {
-  list-style: none;
-  margin: 0;
+  float: right;
 }
 
 li {
   display: inline-block;
-}
-
-.supporting,
-.rating,
-.gallery,
-.location {
-  margin: 4em auto;
-}
-
-.supporting {
-  display: flex;
-  align-items: flex-start;
-  padding: 0 1rem;
-}
-
-.supporting img {
-	height: 10%;
-  width: 10%;
-  margin-right: 5%;
-}
-
-.rating {
-  background-color: OrangeRed;
-  height: 20rem;
-  padding: 0 1rem;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.rating h1 {
-  font-size: 2.5rem;
-}
-
-.gallery img {
-  display: block;
-  width: 30%;
-  margin: 1.5%;
-  float: left;
-}
-
-.clearfix {
-  clear: both;
-}
-
-.location {
+  border-radius: 5px;
+  margin-right: 25px;
   text-align: center;
-  margin-bottom: 7rem;
+  background-color: #28587B;
 }
 
-.location img {
-	width: 100%;
-}
-
-footer {
-  background-color: OrangeRed;
-  padding: 0 1rem;
-}
-
-footer .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5em 0;
+a {
+  display: inline-block;
+  width: 150px;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 24px;
   color: white;
+  text-shadow: 2px 2px 0 #bbbbbb;
 }
 
-@media only screen and (max-width: 960px) {
-  .main {
-    padding-top: 0;
-  }
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
 }
 
-@media only screen and (max-width: 700px) {
-  .supporting img {
+@media only screen and (max-width: 800px) {
+  h1 {
     display: none;
   }
-}
 
-@media only screen and (max-width: 470px) {
-  .rating h1 {
-    font-size: 2px;
+  li {
+    margin-right: 10px;
   }
-  
-  .gallery img {
-    width: 100%
-    margin: 0;
-  }  
-  
-  footer nav {
-		display: none;
+
+  a {
+    width: 100px;
+    padding: 5px 0;
+    font-size: 16px;
   }
 }
