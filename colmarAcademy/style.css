@@ -1,0 +1,247 @@
+/* Universal */
+html {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+}
+
+body {
+	margin: 0;
+}
+
+.leftJumbo {
+	float: left;
+	width: 60%;
+}
+
+.linkRight {
+	display: flex;
+    float: right;
+    flex-direction: column;
+    max-width: 40%;
+    padding-left: 24px;
+    width: 523px;
+} 
+
+h4 {
+	font-size:1rem;
+	font-weight: bold;
+}
+
+/* Media phone screen only */
+@media only screen and (max-width: 320px) {
+	.brand {
+		visibility: hidden; 
+	}
+
+	.logos {
+		display: inline;
+		height: 30px;
+	}
+
+	body {
+		display: flex;
+	}
+
+	.Categories img {
+		visibility: hidden;
+	}
+
+	.linkRight .section img {
+		visibility: hidden;
+	}
+
+	.lastJumbo .linkRight {
+		visibility: hidden;
+	}
+}
+
+
+/* Header */
+
+header .headBar {
+	height: 64px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+}
+
+header .leftBar {
+	height: 32px;
+	display: inline;
+} 
+
+header .leftBar .brand b {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.logos {
+	visibility: hidden;
+}
+
+.headBar nav ul {
+	text-decoration: none;
+	}
+
+.headBar nav ul li {
+	padding: 16px;
+	display: inline;
+}
+
+
+
+/* Main Content */
+
+.firstJumbo {
+	display: flex;
+	background-color: lightgrey;
+}
+
+.firstJumbo img {
+	width: 60%;
+	height: 60%;
+	padding: 24px;
+}
+
+.firstJumbo span {
+	font-size: 1.5rem;
+	float: left;
+	line-height: 1.5;
+	padding-top: 10%;
+	padding-left: 24px;
+}
+
+.firstJumbo span h3 {
+	font-size: 2rem;
+	font-weight: bold;
+}
+.firstJumbo label {
+	background-color: grey;
+}
+
+/* Second Section */
+
+.Discover, .lastJumbo{
+	display: flex;
+	padding-bottom: 32px;
+}
+
+.leftJumbo img {
+	width: 80%;
+	height: 60%;
+	padding: 32px 24px 32px 24px;
+}
+
+.leftJumbo p {
+	font-size: 1rem;
+	float: left;
+	padding-top: 10%;
+}
+
+.leftJumbo h3 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding-bottom: 24px;
+}
+
+.leftJumbo span {
+	margin-left: 24px;
+}
+
+.linkRight {
+	border-left: 1px solid grey;
+}
+
+.linkRight .section img {
+	width: 35%;
+	height: auto;
+	margin: auto 16px;
+}
+
+.section {
+	display: flex;
+	border-bottom: 1px solid grey;
+}
+
+#lecture {
+	background-color: lightgrey;
+}
+
+.section span {
+	line-height: 1.5;
+	display: flex;
+	flex-wrap: wrap;
+	width: 65%;
+    padding-bottom: 16px;
+    align-items: center;
+    margin: auto 16px;
+}
+
+/*
+.section  h4 {
+	font-size:1rem;
+	font-weight: bold;
+} */
+
+.section span a {
+	text-decoration: underline;
+}
+
+.Categories {
+	background-color: lightgrey;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.Categories h3, #lastTitle {
+	padding: 24px;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.itemContainer {
+	padding: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.itemContainer .item {
+	background-color: white;
+	width: 30%;
+	margin: 16px;
+}
+
+.itemContainer .item img {
+	width: 100%;
+	height: auto;
+}
+
+.itemContainer .item span {
+	padding: 16px;
+	line-height: 1.5;
+}
+
+.itemContainer .item span h4 {
+	font-weight: bold;
+}
+
+.lastJumbo {
+	background-color: white;
+}
+
+
+/* Bottom page */
+footer {
+	display: flex;
+	border-top: 1px solid grey;
+	justify-content: space-between;
+}
+
+footer .footerRight {
+	display: inline-flex;
+	padding: 16px 24px auto auto;
+}
