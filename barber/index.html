@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>MartiWap Barber WebPage</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+</head>
+
+<body>
+
+	<div class="header">
+		<div class="nav">
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+		<img src="./resources/black-01.png" id="logo">
+	</div>
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+	<div class="container">
+		
+		<img src="./resources/black-01.png" id="bigLogo">
+
+		<div class="about" id="about">
+			<p>My name is Martina Natale and I am a Barber and Hairdresser. 
+			<br> Growen up in a hair salon I soon picked up the interest in hairstyle. I've being working in hairdressing till 2012, then I moved to England and I decided to spread my skills and have more fun. 
+			<br> I've been working mainly as a Barber since than. I do my job 7 days a week, even though is more than just job.
+			<br> It's something that feels really good! 
+			<br>
+			<br> Have a look at my works and tell me what you think!</p>
+		</div>
+
+		
+		<h4>Gallery</h4>
+		<br>
+
+		<div class="gallery" id="gallery">	
+			<img src="./resources/haircut/14608785_1773132209602224_7539604981378204098_o.jpg" class="item">
+			<img src="./resources/haircut/20245423_1914283465487097_3660806388493141466_n.jpg" class="item">
+			<img src="./resources/haircut/13606474_1735337066715072_4774649029540841369_n.jpg" class="item">
+			<img src="./resources/haircut/12391038_1654680418114071_6502923384611050619_n.jpg" class="item">
+			<img src="./resources/haircut/13087929_1709759732606139_3304384438457604835_n.jpg" class="item">
+			<img src="./resources/haircut/12974300_1698123677103078_5014693397476754336_n.jpg" class="item">
+			<img src="./resources/haircut/12002825_1629599223955524_5522287862927405540_n.jpg" class="item">
+			<img src="./resources/haircut/11889562_1619839018264878_4476597308298854933_n.jpg" class="item">
+			<img src="./resources/haircut/17861819_1865894646992646_6264880559272787291_n.jpg" class="item">
+			<img src="./resources/haircut/12006132_1632460773669369_4410706840507985064_n.jpg" class="item">
+			<img src="./resources/haircut/13263740_1714316658817113_8004522194866028730_n.jpg" class="item">
+			<img src="./resources/haircut/12115425_1639557172959729_4039166890562989494_n.jpg" class="item">
+			<img src="./resources/haircut/12096225_1636347353280711_1649509451441684299_n.jpg" class="item">
+			<img src="./resources/haircut/15826403_1817962111785900_7451024894282634414_n.jpg" class="item">
+			<img src="./resources/haircut/16998005_1844166222498822_6286763859028586143_n.jpg" class="item">
+		</div>
+	</div>
+
+	<div class="footer">
+
+		<div class="contact" id="form">
+			<p>Please feel free to contact me to book an appointment, or even if only to say hi!</p>
+			<div id="errors">
+			</div>
+			<form action="http://martiwap.dev/barber/contactForm.php" method="post" id="contact-form">
+				<label for="name">Name </label><br>
+				<input type="text" name="name" id="name"><br>
+
+				<label for="email">Email </label><br>
+				<input type="email" name="email" id="email"><br>
+
+				<label for="message">Message</label><br>
+				<textarea type="text" name="message" id="message" rows="7" cols="30"></textarea><br>
+
+				<input type="submit" value="Submit"> 
+					
+			</form>
+		</div>
+
+		<div class="author">
+			<h4> Martina Natale   |   martiwapbarber@gmail.com  </h4>
+		</div>
+
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
+
+	 <script>
+
+        $(document).ready(function() {
+            $('#contact-form').on('submit', function(e) {
+                e.preventDefault();
+
+                $.post($(this).attr('action'), {
+                	"name": $('#name').val(),
+        			"email": $('#email').val(),
+    				"message": $('#message').val(),
+    				"spoof": "test"
+                }).done(function(res) {
+                    window.location = 'http://www.google.com';
+                }).fail(function() {
+                    $('#errors').html('').append(res);
+                });
+
+                return false;
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+    	// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		        document.getElementById("myBtn").style.display = "block";
+		    } else {
+		        document.getElementById("myBtn").style.display = "none";
+		    }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		    document.body.scrollTop = 0; // For Chrome, Safari and Opera 
+		    document.documentElement.scrollTop = 0; // For IE and Firefox
+		}
+    </script>
+
+</body>
+</html>

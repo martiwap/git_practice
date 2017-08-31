@@ -1,0 +1,150 @@
+/* Universal */
+
+html {
+	background-color: rgb(245,245,245);
+}
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 18px;
+}
+
+
+/* Header and logo */
+
+.header {
+	display: flex;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	border-bottom: 1px solid grey;
+	justify-content: space-between;
+	background-color: rgba(245,245,245, 0.9);
+}
+
+.nav li {
+	display: inline-flex;
+	list-style-type: none;
+	font-weight: bold;
+	color: black;
+	margin: 0 auto; 
+}
+
+.nav li:hover {
+	color: darkblue;
+}
+
+.nav li:visited {
+	color: black;
+}
+
+#logo {
+	height: 50px;
+	padding-right: 3rem;
+}
+
+
+/* Back to top button */
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: grey; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+/* Container and Gallery */
+
+.container {
+	display: inline;
+}
+
+#bigLogo {
+	display: block;
+	padding-top: 7rem;
+	width: 55%;
+	height: auto;
+	margin: auto;
+}
+
+.about {
+	text-align: center;
+	align-items: center;
+	margin: auto;
+	border-bottom: 1px solid grey;
+}
+
+@media only screen and (max-width: 760px) {
+	.about {
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+	}
+}
+
+h4 {
+	text-align: center;
+	font-size: 22px;
+}
+
+.gallery {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+	border-bottom: 1px solid grey;
+}
+
+.item {
+	width: 300px;
+	height: 300px;
+	padding: 20px;
+	transition: all 0.75s linear 0.2s;
+}
+
+.item:hover {
+	width: 400px;
+	height: 400px;
+}
+
+
+/* Contact form and footer */
+
+.footer {
+	height: 200px;
+	display: inline;
+}
+
+.contact {
+	padding-bottom: 1.75em;
+	border-bottom: 1px solid grey;
+	width: 50%;
+}
+.contact h4 {
+	text-align: center;
+	font-size: 18px;
+}
+
+#form {
+	text-align: center;
+	flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+

@@ -1,20 +1,22 @@
 body {
-	font-family: Helvetica;
-	font-size: 22px;
+	font-family: 'Dosis', sans-serif;
+	font-size: 26px;
 	color: seashell;
-	background-color: black;
+	background-color: #202020;
 	opacity: 0.9;
 	margin: auto;
 }
 
-.header {
+/* Header and navigation bar */
+
+header {
 	display: flex;
 	justify-content: space-between;
 	position: fixed;
 	height: 69px;
 	width: 100%;
 	border-bottom: 1px solid seashell;
-	background-color: black;
+	background-color: #101010;
 	padding: 0 10px;
 	vertical-align: middle;
 }
@@ -28,22 +30,29 @@ body {
 	list-style-type: none;
 	display: inline;
 	padding-right: 10px;
-	text-decoration: underline;
+	text-decoration: none;
 	color: seashell;
 }
 
+.navBar, a:hover {
+	color: lightblue;
+}
+
+
+/* Jumbotron and main image */
 .ourMission {
 	display: flex;
 	background-image: url(../resources/img-mission-background.jpg);
 	height: 700px;
-	width: 1200px;
+	width: 1200px; 
 	align-items: center;
 	margin: 0 auto;	
 }
 
 .target {
 	width: 1200px;
-	background-color: black;
+	background-color: #202020;
+	opacity: 0.9;
 	display: block;
 	text-align: center;
 }
@@ -56,6 +65,8 @@ body {
 	font-weight: bold;
 }
 
+
+/* Tea of the Month Section */
 .teaMonth {
 	text-align: center;
 	align-items: center;
@@ -78,11 +89,20 @@ body {
 	width: 100%;
 	width: 300px;
 	height: 200px;
+	transition: 0.3s ease;
+	border-radius: 10%;
 }
 
 .item {
 	text-align: center;
 }
+
+.item img:hover {
+	transform: scale(1.1);
+}
+
+
+/* Location and address section */
 
 .location {
 	background: url(../resources/img-locations-background.jpg) no-repeat;
@@ -100,12 +120,16 @@ body {
 }
 
 .locItem {
-	background-color: black;
-	opacity: 1;
+	background-color: #202020;;
+	opacity: 0.8;
 	padding: 40px;
 	width: 250px;
 	height: 250px;
 	text-align: center;
+}
+
+.locItem:hover {
+	color: lightblue;
 }
 
 .locColumn{
@@ -116,9 +140,15 @@ body {
 .locColumn h5 {
 	line-height: 35px;
 }
+
+/* Footer with contanct */
 .footer {
 	text-align: center;
 	height: 200px;
+}
+
+.copyright {
+	display: inline-flex;
 }
 
 .copyright {
