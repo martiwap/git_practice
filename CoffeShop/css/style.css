@@ -1,0 +1,142 @@
+html {
+	font-family: 'Ubuntu Mono', monospace;
+	background-color: rgba(51, 26, 0, 0.5); 
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+/* Universal */
+h2 {
+	font-size: 1.5rem;
+	font-style: italic;
+}
+
+.container-fluid {
+	background: rgba(51, 26, 0, 0.5);
+	text-align: center;
+}
+
+.fade {
+  margin: 50px;
+  padding: 50px;
+}
+
+a:visited, a:link {
+	color: black;
+}
+
+a:hover {
+	color: hotpink;
+}
+
+/* index.html homepage */
+
+.homepage {
+	margin-top: 15%;
+	padding-bottom: 30%;
+}
+
+.main {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+#brand-name {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.learn-more {
+	font-size: 1.3rem;
+	display: inherit;	
+}
+
+/* About us page */
+.about {
+	margin-top: 7%;
+	padding-bottom: 15%;
+	line-height: 1.4;
+	position: absolute;
+	background: transparent;
+}
+
+.section {
+	padding: 20px 60px;
+}
+
+.back-image {
+	position: relative;
+	margin-top: 0;
+	float: left;
+	background: transparent;
+}
+
+#back-image {
+	opacity: 0.5;
+	background-color:
+	background: rgba(51, 26, 0, 0.5); 
+}
+
+/* Contact page */
+.contact-section {
+	margin-top: 7%;
+	padding-bottom: 15%;
+	line-height: 1.4;
+}
+
+form {
+	padding-top: 3rem;
+	line-height: 2;
+}
+
+/* Menu page */ 
+.menu-section {
+	margin-top: 7%;
+	padding-bottom: 15%;
+}
+
+.menu-title {
+	padding-bottom: 3rem;
+}
+
+.price-list li {
+	list-style: none;
+	font-size: 1.3rem;
+	font-style: italic;
+}
+
+.container {
+	display: flex;
+	padding-bottom: 50px;
+
+}
+
+.menu-item {
+	line-height: 1.3;
+}
+
+/* Footer */
+.footer {
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.footer li {
+	display: inline-flex;
+	padding: 10px;
+	vertical-align: middle;
+}
+
+ul {
+	display: inline;
+
+}
+
+.container {
+	width: 100%;
+}
+
+
